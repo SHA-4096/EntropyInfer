@@ -1,0 +1,25 @@
+{
+    "segment_size": 512,
+    "threshold_len": 4096,
+    "block_size": 8,
+    "prefill_budgets": 2048,
+    "decode_evict_budgets": 1024,
+    "layer_fusion": false,
+    "layer_skip": 1,
+    "prefill_budget_type": "ent_based",
+    "ent_based_prefill_params":{
+        "e_t": 1e-5,
+        "delta_t": 0.4,
+        "alpha": 0.5,
+        "base_budget": 2048
+    },
+    "latent_decode": true,
+    "latent_decode_params":{
+        "decode_gap": 16,
+        "pooling_method": "avgpool",
+        "pooling_kernel_size": 5,
+        "use_gqa": false,
+        "gqa_func": "avgpool",
+        "window_size": 32
+    }
+}
